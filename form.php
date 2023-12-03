@@ -14,11 +14,47 @@
       justify-content: center;
       align-items: center;
       height: 150vh;
+      background-color: #f8f9fa; /* Light gray background */
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #1e7e34;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .btn-primary {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .btn-primary:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+    .box {
+      border: 1px solid #fefefe;
+      color: #1e7e34;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="container">
     <div class="container">
       <h1>CV Form</h1>
@@ -26,6 +62,7 @@
 
         <!-- Personal Details -->
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
         <h2 class="box">Personal Details</h2>
         <div class="form-group row">
           <label for="first_name" class="col-sm-2 col-form-label">First Name:</label>
@@ -214,10 +251,9 @@
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-12 text-center">
+            <div style="display: flex; align-items:center; justify-content:center" class="col-sm-12 text-center">
               <button type="submit" class="btn btn-primary btn-lg">Submit</button>
               <a href="index.php"><button type="button" class="btn btn-primary btn-lg m-3">Return</button></a>
-
             </div>
           </div>
 

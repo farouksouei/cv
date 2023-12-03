@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
   // Output data of each row
   while ($row = $result->fetch_assoc()) {
     // Display the CV record using Bootstrap classes
-?>
+    ?>
     <!DOCTYPE html>
     <html>
 
@@ -46,10 +46,15 @@ if ($result->num_rows > 0) {
           font-family: Arial, Helvetica, sans-serif;
           margin: 0;
           padding: 0;
+          background-color: #f8f9fa;
         }
 
         .container {
           padding: 20px;
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-top: 50px;
         }
 
         .row {
@@ -118,10 +123,10 @@ if ($result->num_rows > 0) {
             <div class="card">
               <div class="card-body">
                 <h3><?php echo $row['experience'] ?></h3>
-                <h3>Job title :<?php echo $row['job_title'] ?></h3>
-                <p class="text-muted">Start Date : <?php echo $row['start_date'] ?></p>
-                <p class="text-muted"> End Date :<?php echo $row['end_date'] ?></p>
-                <p class="text-muted"> Description :<?php echo $row['job_description'] ?></p>
+                <h3>Job title: <?php echo $row['job_title'] ?></h3>
+                <p class="text-muted">Start Date: <?php echo $row['start_date'] ?></p>
+                <p class="text-muted">End Date: <?php echo $row['end_date'] ?></p>
+                <p class="text-muted">Description: <?php echo $row['job_description'] ?></p>
               </div>
             </div>
           </div>
@@ -132,16 +137,16 @@ if ($result->num_rows > 0) {
             <h2>Education</h2>
             <div class="card">
               <div class="card-body">
-                <h3>Degree : <?php echo $row['degree'] ?></h3>
-                <h3>Institution : <?php echo $row['institution'] ?></h3>
-                <p class="text-muted">Start Date : <?php echo $row['start_date_edu'] ?></p>
-                <p class="text-muted"> End Date :<?php echo $row['end_date_edu'] ?></p>
-                <p class="text-muted"> Description :<?php echo $row['edu_description'] ?></p>
+                <h3>Degree: <?php echo $row['degree'] ?></h3>
+                <h3>Institution: <?php echo $row['institution'] ?></h3>
+                <p class="text-muted">Start Date: <?php echo $row['start_date_edu'] ?></p>
+                <p class="text-muted">End Date: <?php echo $row['end_date_edu'] ?></p>
+                <p class="text-muted">Description: <?php echo $row['edu_description'] ?></p>
               </div>
             </div>
           </div>
         </div>
-        <a href="index.php"><button type="button" class="btn btn-primary btn-lg m-3">Return To home page</button></a>
+        <a href="index.php"><button type="button" class="btn btn-success btn-lg m-3">Return To home page</button></a>
     <?php
   }
 } else {
@@ -151,5 +156,4 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
-    ?>
-    ``
+?>
